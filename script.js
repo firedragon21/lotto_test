@@ -36,10 +36,12 @@ let randomNumber=Math.round(Math.random()*1000);
 play.style.background = '#999';
 }
 
-function Stop(randomNumber) {
+function Stop() {
 clearInterval(timer);
 var play = document.getElementById('play');
 play.style.background = '#036';
+let randomNumber=Math.round(Math.random()*1000);
+console.log(randomNumber);
 alert(choose(randomNumber));
 title.innerHTML = choose(randomNumber);
 }
